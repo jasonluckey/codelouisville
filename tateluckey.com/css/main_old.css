@@ -1,0 +1,85 @@
+/*****
+BASE ELEMENT STYLES
+******/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    /*background-color: #ffc425; */
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+h1 {
+    color: #493267;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    padding: 5%;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+/*****
+BODY LAYOUT STYLES
+******/
+
+/*-----
+Navigation
+-----*/
+
+.name {
+  margin:0;
+}
+
+/*-----
+Layout Containers
+-----*/
+
+.main-header {
+  background: #ffc425; 
+  padding: 1em 0;
+}
+
+.main-footer {
+  text-align: center;
+  padding: 2em 0;
+  background: #d9e4ea;
+}
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.img-circle {
+    border-radius: 50%;
+    max-width: 25%;
+    max-height: 25%;
+}
+
+/*-----
+Media Queries
+-----*/
+
+@media (min-width:769px) {
+
+    .wrap {
+    min-height: calc(100vh-89px);
+    }
+
+    .container {
+      width: 70%;
+      max-width: 1000px;
+      margin: 0 auto;
+     }
+}
