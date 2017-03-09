@@ -5,33 +5,71 @@
   
   <title>TaterBait dot Com</title>
 
-  <meta name="description" content="">
-  <meta name="author" content="Jason Luckey">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!--Insert Style Sheet Here-->
   <link rel="stylesheet" href="css/styles.css" />
-
-  <!-- Insert Google Fonts Here -->
-  <link rel="stylesheet" href="css/fonts.css" />
+  <link href='http://fonts.googleapis.com/css?family=Average|Courgette' rel='stylesheet' type='text/css'>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  
+  <script src="scripts/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="scripts/scripts.js"></script>
   
 </head>
 
-<body>
-    <header class="main-header">
-    <h2 />TaterBait dot Com
-    </header>
+<!--<body onload="ran_col('#7e18d1');">-->
+<body id="wrapper" bgcolor="#7e18d1">
+  
+    <h1>TaterBait dot Com </h1>
+    <ul id="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Blog</a></li>
+    </ul>
+    
+    
+      <p id="about">I have a pair of AirPods. I don't think you do.
+      <br>My AirPods are great. I love them. </p>
+      
+      <h3 id="see_them">Click the button to see them</h3>
+      <a href="img/airpods.jpg" class="magnific">See 'Em</a>
+      
+      <p>I want to have a table, so here it is</p>
+      <table id="some_stuff">
+        <thead>
+          <tr>
+          <th>One thing</th>
+          <th>Another thing</th>
+          <th>One more</th>
+          <th>Last thing</th>
+          </tr>
+        </thead>
+        <tr>
+        <td><strong>Boom</strong></td>
+        <td>Foot</td>
+        <td>Arm</td>
+        <td>Knee</td>
+        </tr>
+        <tr>
+        <td><strong>Zap</strong></td>
+        <td>Hand</td>
+        <td>Leg</td>
+        <td>Ear</td>
+        </tr>
+        <tr>
+        <td><strong>Bang</strong></td>
+        <td>Nose</td>
+        <td>Toe</td>
+        <td>Finger</td>
+        </tr>
+        </table>
+       
+<p id="about">Don't like the webpage color? </p>
+<input id="clickMe" type="button" value="ChangeMe" onclick="ran_col();" />
 
 <footer class = "main-footer">
 <p>&copy;2017 Jason Luckey</span>
-<!--Include JavaScript Here -->
 </footer>
 
 </body>
