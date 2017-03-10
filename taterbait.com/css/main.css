@@ -1,0 +1,132 @@
+/*
+found some stuff on http://www.hongkiat.com/blog/20-useful-css-tips-for-beginners/
+*/
+
+/* 
+BASE STYLES
+*/
+
+body {
+  margin: 0;
+  font-family: verdana, sans-serif;
+  font-size: 0.85em;
+}
+
+#wrapper {
+  width: 920px;
+  margin: 0 auto;
+}
+
+/*
+BODY ELEMENTS
+*/
+
+h1 {
+text-indent:-9999px;
+background:url("../img/title3.jpg") no-repeat;
+width:920px;
+height:231px;
+}
+
+/*
+NAVIGATION ELEMENTS
+*/
+
+#nav {
+  margin-top: 20px;
+  list-style: none;
+  float: right;
+}
+
+#nav li {
+  float: left;
+  margin-left: 20px;
+}
+
+a {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 10px;
+  color: #eac657;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+a:hover {
+  color: #d17219;
+  background: #FFF;
+}
+
+/*
+FOOTER
+*/
+
+.main-footer {
+  /*background: #551A8B; */
+  color: #000;
+  padding: 2em 0;
+  margin-top: 30px;
+}
+
+/*
+MEDIA QUERIES
+*/
+
+@media (min-width: 769px) {
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .name,
+  .col {
+    float: left;
+  }
+
+  .primary,
+  .secondary {
+    width: 50%;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .tagline {
+    font-size: 1.4em;
+  }
+
+  /* ---- Float clearfix ---- */
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+}
+
+@media (min-width: 1025px) {
+  
+  .container {
+    width: 80%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .primary {
+    width: 40%;
+  }
+
+  .secondary,
+  .tertiary {
+    width: 30%;
+  }
+
+}
