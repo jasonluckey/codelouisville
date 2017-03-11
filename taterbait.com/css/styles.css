@@ -4,7 +4,6 @@ Page Styles
 
 body {
   margin: 0;
-/*  background: #7e18d1; */
   font-family: verdana, sans-serif;
   font-size: 0.85em;
 }
@@ -22,8 +21,6 @@ body {
   visibility: hidden;
 }
 
-
-
 /*********************
 Header
 *********************/
@@ -38,12 +35,9 @@ h1 {
   font-size: 3em;
   float: left;
   margin: 0;
-  /*text-indent: -20000px;*/
   width: 300px;
   height: 66px;
 }
-
-
 
 /*********************
 Navigation
@@ -73,8 +67,6 @@ a:hover {
   color: #d17219;
   background: #FFF;
 }
-
-
 
 /*********************
 Content
@@ -118,8 +110,6 @@ h2 {
   margin-right: 20px;
 }
 
-
-
 /*********************
 Table
 *********************/
@@ -148,9 +138,9 @@ Table
   background: #d2b14e;
 }
 
-/* ================================= 
+/**********************************
   Footer
-==================================== */
+**********************************/
 .main-footer {
   background: #551A8B;
   color: #000;
@@ -158,9 +148,9 @@ Table
   margin-top: 30px;
 }
 
-/* ================================= 
+/**********************************
   Media Queries
-==================================== */
+**********************************/
 
 @media (min-width: 769px) {
 

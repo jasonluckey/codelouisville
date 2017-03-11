@@ -6,12 +6,13 @@
   <title>TaterBait dot Com</title>
 
   <!--Insert Style Sheet Here-->
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/main.css" />
   <link href='http://fonts.googleapis.com/css?family=Average|Courgette' rel='stylesheet' type='text/css'>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="scripts/jquery.magnific-popup.min.js"></script>
   <script type="text/javascript" src="scripts/scripts.js"></script>
@@ -19,7 +20,7 @@
 </head>
 
 <!--<body onload="ran_col('#7e18d1');">-->
-<body id="wrapper" bgcolor="#7e18d1">
+<body bgcolor="#009292">
   
     <h1>TaterBait dot Com </h1>
     <ul id="nav">
@@ -28,12 +29,11 @@
     <li><a href="#">Blog</a></li>
     </ul>
     
-    
-      <p id="about">I have a pair of AirPods. I don't think you do.
+      <p>I have a pair of AirPods. I don't think you do.
       <br>My AirPods are great. I love them. </p>
       
       <h3 id="see_them">Click the button to see them</h3>
-      <a href="img/airpods.jpg" class="magnific">See 'Em</a>
+      <a href="img/airpods.jpg" onClick="return popup(this, 'AirPods')">See 'em</A>
       
       <p>I want to have a table, so here it is</p>
       <table id="some_stuff">
@@ -66,7 +66,7 @@
         </table>
        
 <p id="about">Don't like the webpage color? </p>
-<input id="clickMe" type="button" value="ChangeMe" onclick="ran_col();" />
+<input id="clickMe" type="button" value="ChangeMe" onclick="random_color();" />
 
 <footer class = "main-footer">
 <p>&copy;2017 Jason Luckey</span>
