@@ -12,66 +12,51 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
-
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="scripts/jquery.magnific-popup.min.js"></script>
-  <script type="text/javascript" src="scripts/scripts.js"></script>
+  
   
 </head>
 
-<!--<body onload="ran_col('#7e18d1');">-->
-<body bgcolor="#009292">
+<body bgcolor="#009292" id="wrapper">
   
     <h1>TaterBait dot Com </h1>
-    <ul id="nav">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Blog</a></li>
-    </ul>
+    <header class="main-header">
+    <div class="container clearfix">
+     <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+     </ul>
     
-      <p>I have a pair of AirPods. I don't think you do.
-      <br>My AirPods are great. I love them. </p>
+    </header>
+    
+     <div>
+      <p id="small-headline">I have a pair of AirPods. I don't think you do.</p>
+      <p id="large-headline">My AirPods are great. I love them. </p>
       
       <h3 id="see_them">Click the button to see them</h3>
       <a href="img/airpods.jpg" onClick="return popup(this, 'AirPods')">See 'em</A>
-      
-      <p>I want to have a table, so here it is</p>
-      <table id="some_stuff">
-        <thead>
-          <tr>
-          <th>One thing</th>
-          <th>Another thing</th>
-          <th>One more</th>
-          <th>Last thing</th>
-          </tr>
-        </thead>
-        <tr>
-        <td><strong>Boom</strong></td>
-        <td>Foot</td>
-        <td>Arm</td>
-        <td>Knee</td>
-        </tr>
-        <tr>
-        <td><strong>Zap</strong></td>
-        <td>Hand</td>
-        <td>Leg</td>
-        <td>Ear</td>
-        </tr>
-        <tr>
-        <td><strong>Bang</strong></td>
-        <td>Nose</td>
-        <td>Toe</td>
-        <td>Finger</td>
-        </tr>
-        </table>
-       
-<p id="about">Don't like the webpage color? </p>
-<input id="clickMe" type="button" value="ChangeMe" onclick="random_color();" />
+     </div>
 
-<footer class = "main-footer">
-<p>&copy;2017 Jason Luckey</span>
-</footer>
+      <p id="small-headline">I want to have a table </p>
+      <p id="large-headline">Here it is</p>
+     <div class="table_demo"></div>
+     
 
+      <div class="color_demo">
+		 <p id="about">Don't like the webpage color? </p>
+	    <input id="clickMe" type="button" value="ChangeMe" onclick="random_color();" />
+		</div>
+
+		<div id="footer">
+       <footer class = "main-footer">
+       <p>&copy;2017 Jason Luckey</span>
+       </footer>
+		</div> 
+</div>
 </body>
-
+<!--Insert Scripts Here-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="scripts/scripts.js"></script>
+  <script src="scripts/table.js " type="text/javascript"></script>
+  
 </html>
