@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<title>NewSite</title>
+
+
+<!--Insert Style Sheet Here-->
+  <link rel="stylesheet" href="css/style.css" />
+  
+<body>
+
+<div id="page-container">
+	<div id="main-nav">
+	 <ul class="hidden">
+		<li id="about"><a href="#">About</a></li>
+		<li id="services"><a href="#">Services</a></li>
+		<li id="portfolio"><a href="#">Portfolio</a></li>	 
+		<li id="contact"><a href="#">Contact</a></li>
+	 </ul>
+	</div>
+	
+	<div id="header">
+	 <h1>NewSite</h1>	
+	
+	</div>
+	
+	<div id="sidebar-a">
+	 <div class-"padding">Sidebar A
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam gravida enim ut risus.
+3
+	    Praesent sapien purus, ultrices a, varius ac, suscipit ut, enim. Maecenas in lectus.
+4
+	    Donec in sapien in nibh rutrum gravida. Sed ut mauris. Fusce malesuada enim vitae lacus
+5
+	    euismod vulputate. Nullam rhoncus mauris ac metus. Maecenas vulputate aliquam odio.
+6
+	    Duis scelerisque justo a pede. Nam augue lorem, semper at, porta eget, placerat eget,
+7
+	    purus. Suspendisse mattis nunc vestibulum ligula. In hac habitasse platea dictumst.
+	 </div>
+	    	
+	</div>
+	
+	<div id="content">
+	 <div class="padding">	
+	 <h2><img src="img/about.gif" width="54" height="14" alt="About" /></h2>
+	 <p><strong>Enlighten Designs</strong> is an Internet solutions provider that specialises in front and back end development. To view some of the web sites we have created view our portfolio.</p>
+	 <p>We are currently undergoing a 'face lift', so if you have any questions or would like more information about the services we provide please feel free to contact us.</p>
+	
+	 <h2><img src="img/contact.gif" width="98" height="14" alt="Contact Us" /></h2>
+	 <p>Phone:   (07) 853 6060<br />
+	  Fax:     (07) 853 6060<br />
+	  Email:   <a href="mailto:info@enlighten.co.nz">info@enlighten.co.nz</a><br />
+	  P.O Box: 14159, Hamilton, New Zealand</p>
+	 <p><a href="#">More contact information…</a></p>
+	 </div>
+	</div>
+	
+	<div id="footer">
+	 <div id="altnav">
+		<a href="#">About</a> - 
+		<a href="#">Services</a> - 
+		<a href="#">Portfolio</a> - 
+		<a href="#">Contact</a> - 
+		<a href="#">Terms</a>	 
+	 </div>	
+	 <p>&copy; 2017 Jason Luckey</p> 
+	</div>
+	
+</div>
+
+</body>
+</head>
+</html>
