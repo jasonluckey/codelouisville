@@ -5,7 +5,7 @@
  var letters = ['e2620d','f4b342','a2e23b','3ae2c3','e231b9','c993bc','4286f4','f27f52']; 
  color += letters[Math.floor(Math.random() * letters.length)]; 
   document.body.style.background = color; 
-}
+};
 
 //popup a pic
 
@@ -16,4 +16,30 @@ function popup(mylink, windowname) {
 	else href=mylink.href; 
 	window.open(href, windowname, 'width=300,height=250,scrollbars=yes'); 
 	return false; 
-}
+};
+
+// table stuff
+var proxy = 'https://cors-anywhere.herokuapp.com/';
+var myUrl = 'https://www.1988trip.xyz/data.json';
+var finalUrl = proxy + myUrl;
+
+$.ajax({
+ url: finalUrl,
+  dataType: 'json',
+    success : function(data) 
+    { console.log(data);
+        for (var i=0; i<data.length; i++) {
+            var row = $('<tr><td>' + data[i].OneThing+ '</td><td>' + data[i].AnotherThing + '</td><td>' + data[i].OneMore + '</td><td>' + data[i].LastThing + '</td></tr>');
+            $('#myTable').append(row); }
+    }
+});
+
+// NavBar
+navLinks = document.querySelector('.navNarrow');
+narrowLinks = document.querySelector('.narrowLinks');
+
+navLinks.addEventListener('click', toggle);
+
+function toggle() {
+  narrowLinks.classList.toggle('hidden');
+};
