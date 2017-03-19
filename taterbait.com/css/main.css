@@ -1,69 +1,97 @@
-/*
-found some stuff on http://www.hongkiat.com/blog/20-useful-css-tips-for-beginners/
-*/
+/* helpful: https://internetingishard.com/html-and-css/ */
 
 /* 
 BASE STYLES
 */
 
-body {
+* {
   margin: 0;
-  font-family: verdana, sans-serif;
-  font-size: 0.85em;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#wrapper {
-  width: 920px;
-  margin: 0 auto;
+#small-headline {
+  font-family: Gill Sans, Verdana;
+  font-size: 11px;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#large-headline {
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  color: #444;
+  margin: 0;
+  padding 0px 0px 0px 0px;
+  font-size: 51px;
+  line-height: 44px;
+  letter-spacing: -2px;
+  font-weight: bold;
 }
 
 /*
 BODY ELEMENTS
 */
 
-h1 {
-text-indent:-9999px;
-background:url("../img/title3.jpg") no-repeat;
-width:920px;
-height:231px;
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu img {
+  float: left;
+  padding: 10px;0 20px 20px 0;
+  border-radius: 30%;
+}
+
+a {
+  font-weight: bold;
+  padding: 10px;	
+  text-decoration: none;
+}
+
+a:hover {
+ color: #d17219;
+ background: #fff;
+}
+
+.header {
+  background-color: #EAEDF0;
+}
+
+.content {
+  background-color: #009292;
+  height: 600px;
 }
 
 /*
 NAVIGATION ELEMENTS
 */
 
-#nav {
-  margin-top: 20px;
-  list-style: none;
-  float: right;
+.menu {
+  background-color: #009292;
+  height: 100px;
 }
 
-#nav li {
+.menu li {
   float: left;
+  list-style: none;
   margin-left: 20px;
-}
-
-a {
-  font-size: 1.4em;
-  font-weight: bold;
-  padding: 10px;
-  color: #eac657;
-  text-decoration: none;
-  border-radius: 10px;
-}
-
-a:hover {
-  color: #d17219;
-  background: #FFF;
 }
 
 /*
 FOOTER
 */
-
-.main-footer {
-  /*background: #551A8B; */
-  color: #000;
+.footer {
   padding: 2em 0;
   margin-top: 30px;
 }
@@ -72,61 +100,54 @@ FOOTER
 MEDIA QUERIES
 */
 
-@media (min-width: 769px) {
+/* Mobile Styles */
 
-  .container {
-    width: 90%;
-    margin: 0 auto;
+@media only screen and (max-width: 400px) {
+  body {
+   /* background-color: #F09A9D; Red */
   }
-
-  .name,
-  .col {
-    float: left;
+  .menu img {
+  display: none;
   }
-
-  .primary,
-  .secondary {
-    width: 50%;
-  }
-
-  .main-nav {
-    float: right;
-  }
-
-  .main-nav li {
-    display: inline-block;
-    margin-left: 15px;
-  }
-
-  .tagline {
-    font-size: 1.4em;
-  }
-
-  /* ---- Float clearfix ---- */
-
-  .clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
-  }
-
 }
 
-@media (min-width: 1025px) {
-  
-  .container {
-    width: 80%;
-    max-width: 1150px;
+.header{
+ order: 2;
+ height: 50px;
+}  
+.content {
+  order: 1;
+}
+
+.footer {
+  order: 3;
+}
+/* Tablet Styles 
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .sign-up,
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 50%;
+  }
+}
+*/
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
     margin: 0 auto;
-  }
+}
+  .header {
+    height: 50px;
+}
+  
+.content {
+  order: 2;
+}
 
-  .primary {
-    width: 40%;
-  }
-
-  .secondary,
-  .tertiary {
-    width: 30%;
-  }
-
+.footer {
+  order: 3;
+}
 }
