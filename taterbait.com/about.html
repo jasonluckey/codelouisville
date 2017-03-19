@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
   <title>TaterBait dot Com</title>
 
   <!--Insert Style Sheet Here-->
   <link rel="stylesheet" href="css/main.css" />
-  <link href='http://fonts.googleapis.com/css?family=Average|Courgette' rel='stylesheet' type='text/css'>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -16,31 +17,54 @@
   
 </head>
 
-<body bgcolor="#009292" id="wrapper">
+<body> <!--bgcolor="#009292">
   
     <h1>TaterBait dot Com </h1>
-    <header class="main-header">
-    <div class="container clearfix">
-     <ul class="nav">
+    
+    <img src="img/title_main.jpg" width="126.5" height="113.5" alt="Taterbait" />
+    
+     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="blog.html">Table</a></li>
      </ul>
-    
-    </header>
 
-<p id="small-headline">I'm a nice guy</p>
-<p id="large-headline">About Me</p>
+<p>I'm a nice guy</p>
+<p>About Me</p>
 
-
-
-
-    <div id="footer">
        <footer class = "main-footer">
-       <p>&copy;2017 Jason Luckey</span>
-       </footer>
-    </div> 
+       <p>&copy;2017 Jason Luckey</span> -->
+  <div class='page'>
+   <div class='section menu'>
+    <img src="img/title_main.jpg" width="126.5" height="113.5" alt="Taterbait" />
+     <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+     </ul>
+   </div>
+   
+   <div class='section header'>
+    <p>Don't like the webpage color? </p>
+	 <input id="clickMe" type="button" value="ChangeMe" onclick="random_color();" />
+   </div>
+  
+   <div class='section content' id="colorChange">
+    <p id="small-headline">I'm a nice guy</p>
+    <p id="large-headline">About Me</p>
+   </div>
+   
+   <div class="footer">
+	 <footer>
+     <p>&copy;2017 Jason Luckey</span>
+     <address>
+      Please contact <a href='mailto:jason.luckey@gmail.com'>Me</a> if you want to see my AirPods
+     </address>
+    </footer>
+  </div>
+  
 </div>
+
 </body>
 <!--Insert Scripts Here-->
   <script type="text/javascript" src="scripts/jquery-1.12.4.min.js"></script>
