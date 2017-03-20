@@ -70,7 +70,7 @@ BODY ELEMENTS
 
  .menu img {
   float: left;
-  padding: 10px;0 20px 20px 0;
+  padding: 10px 10px 20px 20px;
   border-radius: 30%;
 }
 
@@ -97,6 +97,11 @@ BODY ELEMENTS
 
  .content p {
   padding-top: 20px;
+}
+
+ .content li {
+  margin-left: 20px;
+  list-style: circle;
 }
 
   .my_table {
@@ -142,7 +147,7 @@ MEDIA QUERIES
 
 /* Mobile Styles */
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 970px) {
   body {
    /* background-color: #F09A9D; Red */
 }
@@ -170,6 +175,17 @@ MEDIA QUERIES
   .footer {
    order: 3;
 }
+
+  .american {
+   display: none;
+}
+
+#large-headline {
+  font-size: 31px;
+  line-height: 44px;
+  letter-spacing: -2px;
+}
+
 }
 
 /* Tablet Styles 
@@ -184,7 +200,7 @@ MEDIA QUERIES
 */
 
 /* Desktop Styles */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 971px) {
   .page {
     width: 960px;
     margin: 0 auto;
@@ -200,4 +216,9 @@ MEDIA QUERIES
   .footer {
     order: 3;
 }
+
+  .french {
+   display: none;
+}
+
 }
