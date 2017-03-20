@@ -4,7 +4,7 @@
 BASE STYLES
 */
 
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,44 +14,52 @@ BASE STYLES
    background-color: #009292;
   }
 
-#small-headline {
+ #small-headline {
   font-family: Gill Sans, Verdana;
   font-size: 11px;
   line-height: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
 }
 
-#large-headline {
+ #large-headline {
   font-family: times, Times New Roman, times-roman, georgia, serif;
   color: #444;
   margin: 0;
-  padding 0px 0px 0px 0px;
+  padding-top: 10px;
+  padding 50px 0px 0px 0px;
   font-size: 51px;
   line-height: 44px;
   letter-spacing: -2px;
   font-weight: bold;
+  text-align: center;
 }
 
 /*
 BODY ELEMENTS
 */
 
-.page {
+ h1 {
+  text-indent: -9999px;
+}
+
+ .page {
   display: flex;
   flex-wrap: wrap;
 }
 
-.section {
+ .section {
   width: 100%;
   height: 300px;
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
 }
 
-.button {
+ .button {
   color: #FFF;
   background-color: #5995DA;
   font-weight: bold;
@@ -60,43 +68,57 @@ BODY ELEMENTS
   border-radius: 5px;
 }
 
-.menu img {
+ .menu img {
   float: left;
   padding: 10px;0 20px 20px 0;
   border-radius: 30%;
 }
 
-a {
+ a {
   font-weight: bold;
   padding: 10px;	
   text-decoration: none;
 }
 
-a:hover {
- color: #d17219;
- background: #fff;
+ a:hover {
+  color: #d17219;
+  background: #fff;
 }
 
-.header {
+ .header {
   background-color: #EAEDF0;
+  display: flex;
 }
 
-.content {
+ .content {
   background-color: #009292;
-  height: 600px;
-  text-align: center;
+  height: 400px;
+}
+
+ .content p {
+  padding-top: 20px;
+}
+
+  .my_table {
+  align-items: center;
+  justify-content: center;
 }
 
 /*
 NAVIGATION ELEMENTS
 */
 
-.menu {
+ .menu {
   background-color: #009292;
   height: 100px;
 }
 
-.menu li {
+ .menu ul {
+  padding-top: 20px;
+
+}
+
+ .menu li {
   justify-content: flex-end;
   float: left;
   list-style: none;
@@ -106,12 +128,12 @@ NAVIGATION ELEMENTS
 /*
 FOOTER
 */
-.footer {
-  width: 100%;
-  padding: 2em 0;
-  margin-top: 0;
-  background-color: #009292;
-  text-align: center;
+  .footer {
+   width: 100%;
+   padding: 2em 0;
+   margin-top: 0;
+   background-color: #009292;
+   text-align: center;
 }
 
 /*
@@ -120,26 +142,36 @@ MEDIA QUERIES
 
 /* Mobile Styles */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 960px) {
   body {
    /* background-color: #F09A9D; Red */
-  }
+}
+
+  .menu ul {
+   padding-top: 15px; 
+}
+
   .menu img {
-  display: none;
-  }
+   display: none;
 }
 
-.header{
- order: 2;
- height: 50px;
+  .header{
+   order: 2;
+   height: 50px;
 }  
-.content {
-  order: 1;
+
+  .content {
+   order: 1;
+}
+  .content p {
+    padding-top: 5px;
+  }
+
+  .footer {
+   order: 3;
+}
 }
 
-.footer {
-  order: 3;
-}
 /* Tablet Styles 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .sign-up,
@@ -161,11 +193,11 @@ MEDIA QUERIES
     height: 50px;
 }
   
-.content {
-  order: 2;
+  .content {
+    order: 2;
 }
 
-.footer {
-  order: 3;
+  .footer {
+    order: 3;
 }
 }
