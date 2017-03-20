@@ -10,6 +10,10 @@ BASE STYLES
   box-sizing: border-box;
 }
 
+  body {
+   background-color: #009292;
+  }
+
 #small-headline {
   font-family: Gill Sans, Verdana;
   font-size: 11px;
@@ -47,6 +51,15 @@ BODY ELEMENTS
   align-items: center;
 }
 
+.button {
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
 .menu img {
   float: left;
   padding: 10px;0 20px 20px 0;
@@ -71,6 +84,7 @@ a:hover {
 .content {
   background-color: #009292;
   height: 600px;
+  text-align: center;
 }
 
 /*
@@ -83,6 +97,7 @@ NAVIGATION ELEMENTS
 }
 
 .menu li {
+  justify-content: flex-end;
   float: left;
   list-style: none;
   margin-left: 20px;
@@ -92,8 +107,11 @@ NAVIGATION ELEMENTS
 FOOTER
 */
 .footer {
+  width: 100%;
   padding: 2em 0;
-  margin-top: 30px;
+  margin-top: 0;
+  background-color: #009292;
+  text-align: center;
 }
 
 /*

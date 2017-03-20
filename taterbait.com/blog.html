@@ -9,6 +9,7 @@
 
   <!--Insert Style Sheet Here-->
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -29,7 +30,7 @@
    
    <div class='section header'>
     <p>Don't like the webpage color? </p>
-	 <input id="clickMe" type="button" value="ChangeMe" onclick="random_color();" />
+	 <input class="button" type="button" value="Change Me" onclick="random_color();" />
    </div>
   
    <div class='section content' id="colorChange">
@@ -43,6 +44,8 @@
         <th>LastThing</th>    
        </tr>
       </table>
+      <p>This table uses an Ajax call to the data housed somewhere else. Why did I create a table like this?
+      Uh, because it's a requirement... Duh.</p>p
    </div>
    
    <div class="footer">
