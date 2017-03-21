@@ -109,6 +109,11 @@ BODY ELEMENTS
   justify-content: center;
 }
 
+.self {
+  border-radius: 50%;
+  float:left;
+}
+
 /*
 NAVIGATION ELEMENTS
 */
@@ -179,6 +184,7 @@ MEDIA QUERIES
   .american {
    display: none;
 }
+
 
 #large-headline {
   font-size: 31px;
