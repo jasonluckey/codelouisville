@@ -152,7 +152,7 @@ MEDIA QUERIES
 
 /* Mobile Styles */
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 600px) {
   body {
    /* background-color: #F09A9D; Red */
 }
@@ -194,16 +194,27 @@ MEDIA QUERIES
 
 }
 
-/* Tablet Styles 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  .sign-up,
-  .feature-1,
-  .feature-2,
-  .feature-3 {
-    width: 50%;
-  }
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 970px) {
+  
+  #large-headline {
+  font-size: 41px;
+  line-height: 44px;
+  letter-spacing: -2px;
 }
-*/
+
+  .header{
+   order: 2;
+   height: 60px;
+}  
+
+  .footer {
+   background: #F09A9D; 
+   order: 3;
+}
+
+}
+
 
 /* Desktop Styles */
 @media only screen and (min-width: 971px) {
