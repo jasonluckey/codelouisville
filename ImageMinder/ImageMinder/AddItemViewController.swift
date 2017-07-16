@@ -9,16 +9,47 @@
 import UIKit
 import CoreData
 
-class AddItemViewController: UIViewController {
+//var date = txtSub * selectedInterval
+
+class AddItemViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var txtTitle: UITextField!
     @IBOutlet weak var txtSub: UITextField!
-
+    @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var selectedChoice: UILabel!
+    
+    
+    //items in PickerView
+    
+    let intervals = ["Minutes", "Hours", "Days", "Weeks", "Months", "Years"]
+    var selectedInterval = ""
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int
+    {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
+    {
+        return intervals[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
+    {
+        return intervals.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+    {
+        selectedChoice.text = intervals[row]
+    }
+    
+    
     @IBAction func addItem(_ sender: Any)
     {
         if txtTitle.text != "" && txtSub.text != ""
         {
-            saveThis(title: txtTitle.text!, subtitle: txtSub.text!)
+            saveThis(title: txtTitle.text!, subtitle: txtSub.text! + selectedChoice.text!)
             txtTitle.text = ""
             txtSub.text = ""
         }
