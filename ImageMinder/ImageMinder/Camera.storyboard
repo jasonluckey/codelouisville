@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0cD-ec-ZKk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="BlG-4s-k1x">
+            <objects>
+                <viewController storyboardIdentifier="Camera" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0cD-ec-ZKk" customClass="CameraViewController" customModule="PIC_Minder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9rm-0F-tHv"/>
+                        <viewControllerLayoutGuide type="bottom" id="ucH-9k-3Wr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vkf-hn-kGF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUP-6G-BLM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oyy-rC-bbB">
+                                        <rect key="frame" x="149" y="629" width="77" height="30"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAA-AL-Fzn">
+                                        <rect key="frame" x="149" y="629" width="77" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Take Photo">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takePhoto:" destination="0cD-ec-ZKk" eventType="touchUpInside" id="BTr-7E-Q9c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="oyy-rC-bbB" firstAttribute="centerX" secondItem="hUP-6G-BLM" secondAttribute="centerX" id="mgz-IZ-EWg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hUP-6G-BLM" firstAttribute="leading" secondItem="Vkf-hn-kGF" secondAttribute="leading" id="KRu-n1-0XW"/>
+                            <constraint firstItem="hUP-6G-BLM" firstAttribute="top" secondItem="Vkf-hn-kGF" secondAttribute="top" id="Q4I-SZ-WPB"/>
+                            <constraint firstItem="ucH-9k-3Wr" firstAttribute="top" secondItem="hUP-6G-BLM" secondAttribute="bottom" id="iaz-QZ-acY"/>
+                            <constraint firstAttribute="trailing" secondItem="hUP-6G-BLM" secondAttribute="trailing" id="yWg-XI-flJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="camera" destination="hUP-6G-BLM" id="bZg-hJ-4tX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R9q-D4-RE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-330.5" y="40.5"/>
+        </scene>
+    </scenes>
+</document>
