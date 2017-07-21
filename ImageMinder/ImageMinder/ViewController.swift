@@ -8,20 +8,13 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 var titles:[String] = []
 var subtitles:[String] = []
 var thisItem = 0
 
-let minute: TimeInterval = 60.0
-let hour: TimeInterval = 60.0 * minute
-let day: TimeInterval = 24 * hour
-let week: TimeInterval = 7 * day
-let month: TimeInterval = 30 * day
-let year: TimeInterval = 52 * week
-
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
     
     @IBOutlet weak var myTableView: UITableView!
 
@@ -57,6 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        initNotificationSetupCheck()
     }
     
     override func viewDidAppear(_ animated: Bool)
@@ -155,23 +149,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    //Set the reminder to run
-    func setNotificationReminder(date : Date) {
-        
-        let dateToFire = date
-        
-        // create a corresponding local notification
-        let notification = UILocalNotification()
-        notification.alertAction = "Done!"
-        notification.soundName = UILocalNotificationDefaultSoundName
-        
-        notification.fireDate = dateToFire
-        notification.alertTitle = "Reminder"
-        notification.alertBody = "\(title)"
-        UIApplication.shared.scheduleLocalNotification(notification)
-        
-        
+    //User Notification function
+    func initNotificationSetupCheck() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert])
+        { (success, error) in
+            if success {
+                print("Permission Granted")
+            } else {
+                print("There was a problem!")
+            }
+        }
     }
-    
 }
 
